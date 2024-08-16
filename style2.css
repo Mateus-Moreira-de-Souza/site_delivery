@@ -1,0 +1,42 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+header{
+	background-color: black;
+	height: 180px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#logo{
+	height: 160px;
+}
+
+main{
+	text-align: center;
+	padding: 70px 400px;
+}
+
+p{
+	font-size: 20px;
+	text-align: justify;
+}
+
+#amigos{
+	position: relative;
+	top: 40px;
+	border: solid 9px;
+}
+div{
+	display: flex;
+	height: 100px;
+	padding: 80px;
+	justify-content: space-around;
+}
+div img{
+	height: 100px;
+	width: 100%;
+}

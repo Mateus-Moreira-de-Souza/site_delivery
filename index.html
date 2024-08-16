@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogani</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+		<img src="logo.webp" alt="Logo" class="logo">
+		<nav>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="index2.html">Quem somos</a></li>
+				<li><a href="index3.html">Pedido</a></li>
+				<li><a href="index4.html">Cadastro</a></li>
+			</ul>
+		</nav>
+		<button class="contact-btn" onclick="mostrar_contato()">Contato</button>
+			<script>
+				function mostrar_contato(){
+					let telefone = "+55 31 98370-1056";
+				alert("O nosso contato é:" + telefone);
+				}
+			</script>
+	</header>
+
+	<section class="content">
+</script>
+
+
+		<button class="search-btn" onclick="mostrar_produto()">Busca</button>
+
+		<script>
+			function mostrar_produto() {
+				let valores = ["R$40", "R$50", "R$55", "R$70"];
+				
+				let indiceAleatorio = Math.floor(Math.random() * valores.length);
+				let valorSelecionado = valores[indiceAleatorio];
+	
+				let produto = prompt("Digite o produto requerido:");
+				
+				if (produto) {
+					alert("Ótima escolha, nós temos " + produto + " por apenas " + valorSelecionado);
+				} else {
+					alert("Você não inseriu um produto.");
+				}
+
+				if (produto) {
+					let mensagem = "Produto: " + produto + " - Preço: " + valorSelecionado;
+
+					let lista = JSON.parse(localStorage.getItem('listaProdutos')) || [];
+					lista.push(mensagem);
+					localStorage.setItem('listaProdutos', JSON.stringify(lista));
+					
+					alert("Ótima escolha, nós temos " + produto + " por apenas " + valorSelecionado);
+				} else {
+					alert("Você não inseriu um produto.");
+				}
+			}
+		</script>
+	</section>
+</body>
+</html>

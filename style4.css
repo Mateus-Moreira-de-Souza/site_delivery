@@ -1,0 +1,67 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+header{
+	background-color: black;
+	height: 180px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#logo{
+	height: 160px;
+}
+
+.contact-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	font-family: "Oswald", sans-serif;
+	padding: 80px;
+}
+
+.lFormulario {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+	font-family: "Oswald", sans-serif;
+}
+
+.formulario {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444;
+    color: black;
+	font-family: "Oswald", sans-serif;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #df0e62;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+.message-botao {
+    padding: 10px 20px;
+    background: #df0e62;
+    color: #fff;
+    cursor: pointer;
+	text-decoration: none;
+}
+a .message-botao{
+	text-decoration: none;
+}

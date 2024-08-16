@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style3.css">
+</head>
+<body>
+	<header>
+		<a href="index.html"><img src="logo.webp" id="logo"></a>
+	</header>
+
+	<main>
+	<h1>Lista de Produtos e Preços</h1>
+    <ul id="listaProdutos"></ul>
+
+    
+	<button onclick="apagar()">Comprar</button>
+	</main>
+
+	<script>
+        let lista = JSON.parse(localStorage.getItem('listaProdutos')) || [];
+
+        let listaUl = document.getElementById('listaProdutos');
+
+        lista.forEach(function(item) {
+            let li = document.createElement('li');
+            li.textContent = item;
+            listaUl.appendChild(li);
+        });
+
+		function apagar(){
+				let compra = prompt("Digite o seu cartão para confirmar a compra:")
+				alert("Comprar realizada com sucesso, em menos de 1 hora o seu pedido chegará na sua porta")
+				localStorage.removeItem('listaProdutos');
+				listaUl.innerHTML = '';
+		}
+    </script>
+</body>
+</html>

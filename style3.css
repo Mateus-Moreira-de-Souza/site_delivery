@@ -1,0 +1,42 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+
+header{
+	background-color: black;
+	height: 180px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+#logo{
+	height: 160px;
+}
+
+main{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+h1{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+ul{
+	position: relative;
+	right: 15px;
+	text-align: center;
+	list-style: none;
+	padding-bottom: 30px;
+}
+
+button{
+	padding: 10px 50px;
+	background-color: red;
+	color: white;
+}
